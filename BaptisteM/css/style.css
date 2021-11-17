@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: grey;
+}
+
+main {
+  flex: 1 0 auto;
+
+}
+
+#presentation h2{
+  margin-bottom:4vw;
+}
+
+#presentation img{
+  margin-top: 1vw;
+}
+
+.section{
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
