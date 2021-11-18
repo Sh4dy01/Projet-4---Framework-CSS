@@ -34,3 +34,7 @@ main {
 .card-image img{
   max-height: 500px;
 }
+
+p, h1, h2{
+  font-family: 'kanit', sans-serif;
+}
