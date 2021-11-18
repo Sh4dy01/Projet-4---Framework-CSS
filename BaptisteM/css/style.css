@@ -24,7 +24,8 @@ main {
 }
 
 .titlepage3{
-  font-size: 35px;
+  font-size: 30px;
+  color: white;
 }
 
 .textpage3{
@@ -35,6 +36,6 @@ main {
   max-height: 500px;
 }
 
-p, h1, h2, ul, li{
+p, h1, h2, ul, li, a{
   font-family: 'Kanit', sans-serif;
 }
