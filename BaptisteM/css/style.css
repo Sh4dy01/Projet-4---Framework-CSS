@@ -22,3 +22,15 @@ main {
   padding-top: 4vw;
   padding-bottom: 4vw;
 }
+
+.titlepage3{
+  font-size: 35px;
+}
+
+.textpage3{
+  font-size: 25px;
+}
+
+.card-image img{
+  max-height: 500px;
+}
