@@ -2,11 +2,26 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: grey;
 }
 
 main {
   flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, span, p, label, a{
+  font-family: 'Kanit', sans-serif;
+}
+
+.modal .prefix{
+  width: 0em;
+}
+
+.modal .row{
+  margin-bottom: 0px;
+}
+
+.modal-close i.material-icons{
+  line-height: inherit;
 }
 
 .section{
@@ -14,6 +29,37 @@ main {
   padding-bottom: 4vw;
 }
 
-.page-footer ul > li{
-  display: inline-block;
+.student{
+  margin-bottom: 5vw;
+}
+
+.student li{
+  margin-bottom: 5px;
+}
+
+.student img{
+  padding: 1vw;
+}
+
+.collapsible .row{
+  margin-bottom: 0px;
+}
+
+.collapsible-header{
+  height: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-game{
+  background-image: url(../img/game_img.jpg);
+}
+
+.header-web{
+  background-image: url(../img/web.jpg);
+}
+
+.header-jam{
+  background-image: url(../img/game_jam.jpg);
 }

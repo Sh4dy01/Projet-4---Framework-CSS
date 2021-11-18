@@ -5,6 +5,13 @@ $(document).ready(function(){
   $('.materialboxed').materialbox();
   $('input#input_text, textarea#textarea2').characterCounter();
   $('.collapsible').collapsible();
+  $('.carousel').carousel();
+  $('.scrollspy').scrollSpy();
+});
+
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
 });
 
 $('#textarea1').val('');
