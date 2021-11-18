@@ -35,6 +35,6 @@ main {
   max-height: 500px;
 }
 
-p, h1, h2{
-  font-family: 'kanit', sans-serif;
+p, h1, h2, ul, li{
+  font-family: 'Kanit', sans-serif;
 }
