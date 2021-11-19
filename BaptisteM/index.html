@@ -49,7 +49,7 @@
         </nav>
       </header>
 
-      <main>
+      <main id="main">
 
         <section class="container section" id="presentation">
           <h2 class="center-align">Présentation</h2>
@@ -125,27 +125,42 @@
 
       </main>
 
+    <div class="secret" id="secret1_img">
+      <img src="img/tondeuse.png" alt="">
+    </div>
+    <div class="secret" id="secret2_img">
+      <img src="img/tondeuse.png" alt="">
+    </div>
+
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-           <div class="col l6 s12">
-             <h5 class="white-text">Footer Content</h5>
-             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+           <div class="col s6 l6">
+             <form>
+              <div class="row valign-wrapper">
+                <div class="input-field col s6 l5">
+                  <input id="input_text" type="text" data-length="9">
+                  <label for="input_text">Jeu contenant le premier easter egg ?</label>
+                </div>
+                <div class="col s3 l3">
+                  <a class="btn-floating waves-effect waves-light red" id="secret_btn"><i class="material-icons small">done</i></a>
+                </div>
+                <div class="col s3 l3 pull-l2">
+                  <a class="btn-floating waves-effect waves-light red" id="return_btn"><i class="material-icons small">undo</i></a>
+                </div>
+              </div>
            </div>
-           <div class="col l4 offset-l2 s12">
-             <h5 class="white-text">Links</h5>
+           <div class="col s4 l4 offset-l2 offset-s1">
              <ul>
-               <li><a class="grey-text text-lighten-3" href="#!">Presentation</a></li>
-               <li><a class="grey-text text-lighten-3" href="#!">Projects</a></li>
-               <li><a class="grey-text text-lighten-3" href="#!">Nekfeu>Damso</a></li>
-               <li><a class="grey-text text-lighten-3" href="#!">Nekfeu>Molière</a></li>
+               <li><a class="grey-text text-lighten-3" href="#presentation">Présentation</a></li>
+               <li><a class="grey-text text-lighten-3" href="#projects">Projets</a></li>
              </ul>
            </div>
          </div>
        </div>
        <div class="footer-copyright">
          <div class="container">
-           © 2021 Copyright Text
+           <span>© 2021 Prog Guys</span>
          </div>
       </div>
     </footer>
