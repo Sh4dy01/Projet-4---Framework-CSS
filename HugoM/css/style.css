@@ -11,6 +11,9 @@ main {
 h1, h2, h3, h4, h5, span, p, label, a{
   font-family: 'Kanit', sans-serif;
 }
+.section h2{
+  margin-top: 0px;
+}
 
 .modal .prefix{
   width: 0em;
@@ -24,13 +27,25 @@ h1, h2, h3, h4, h5, span, p, label, a{
   line-height: inherit;
 }
 
+.student .card-title{
+  margin-top: 0px;
+}
+
+.secret{
+  position: fixed;
+  height:100px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.secret img{
+  height:100px;
+}
 .section{
   padding-top: 4vw;
   padding-bottom: 4vw;
-}
-
-.student{
-  margin-bottom: 5vw;
 }
 
 .student li{
@@ -62,4 +77,40 @@ h1, h2, h3, h4, h5, span, p, label, a{
 
 .header-jam{
   background-image: url(../img/game_jam.jpg);
+}
+
+/* label color */
+.input-field label {
+ color: black;
+}
+
+.page-footer .input-field label {
+ color: white;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: grey;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: black;
+}
+
+.page-footer .btn-floating{
+  margin-left: 0px;
 }
