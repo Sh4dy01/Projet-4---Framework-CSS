@@ -22,10 +22,20 @@ $("#secret_btn" ).click(function() {
   elem1.show();
   elem2.show();
 
-  elem1.animate({top: '-=100px'}, "slow");
-  elem1.animate({left: '+=100px'}, "fast");
-  elem1.animate({left: '-=100px'}, "slow");
-  elem1.animate({left: '+=10000px'}, "fast");
+  elem1.animate({top: '-=200px'}, "100");
+  elem1.animate({left: '+=150px'}, "100");
+  elem1.animate({left: '-=130px'}, "100");
+  elem1.animate({left: '+=110px'}, "100");
+  elem1.animate({left: '-=120px'}, "100");
+  elem1.animate({left: '+=10000px'}, "100");
+
+  elem2.animate({top: '-=100px'}, "100");
+  elem2.animate({left: '+=130px'}, "100");
+  elem2.animate({left: '-=110px'}, "100");
+  elem2.animate({left: '+=120px'}, "100");
+  elem2.animate({left: '-=150px'}, "100");
+  elem2.animate({left: '+=1980px'}, "100");
+
 
   if (text == 'adventure') {
 
