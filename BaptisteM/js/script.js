@@ -16,11 +16,13 @@ $("#secret_btn" ).click(function() {
   var text = $("#secret_text").val();
   var elem1 = $("#secret1_img");
   var elem2 = $("#secret2_img");
+  var finish = $("#finish_img");
   var site = $("#main");
 
   site.hide();
   elem1.show();
   elem2.show();
+  finish.show();
 
   elem1.animate({top: '-=200px'}, "100");
   elem1.animate({left: '+=150px'}, "100");

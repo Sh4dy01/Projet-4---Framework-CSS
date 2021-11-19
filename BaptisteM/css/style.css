@@ -19,9 +19,22 @@ h1, h2, h3, h4, h5, span, p, label, a{
   width: 0em;
 }
 
+.secret{
+  position: fixed;
+  height:100px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
 .finish{
-top: 50%;
-right: 0;
+  position: fixed;
+  height:300px;
+  right: 0;
+  top: 75%;
+  z-index: 1;
+  display: none;
 }
 
 .modal .row{
@@ -34,15 +47,6 @@ right: 0;
 
 .student .card-title{
   margin-top: 0px;
-}
-
-.secret{
-  position: fixed;
-  height:100px;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: none;
 }
 
 .card-content i{
