@@ -9,11 +9,6 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 });
 
-
-var dropdown = $("#projects-btn");
-dropdown.alignment("right");
-
-
 $('.carousel.carousel-slider').carousel({
   fullWidth: true,
   indicators: true
