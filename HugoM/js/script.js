@@ -11,6 +11,7 @@ $(document).ready(function(){
 $('#textarea1').val('');
   M.textareaAutoResize($('#textarea1'));
 
+
 $("#secret_btn" ).click(function() {
   var text = $("#secret_text").val();
   var elem = $("#secret_img");

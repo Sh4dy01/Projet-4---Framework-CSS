@@ -24,18 +24,21 @@
                 <i class="material-icons">menu</i>
               </a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#projects">Projets</a>
-                <li><a class="waves-effect waves-light btn modal-trigger" href="#contact">Contactez-nous</a></li>
+                <li><a href="#presentation" class="waves-effect waves-light blue btn">Présentation</a></li>
+                <li><a class="dropdown-trigger waves-effect waves-light red btn" href="#projects" data-target="project-dropdown">Projets</a></li>
+
+                  <!-- Project Dropdown Structure -->
+                  <ul id='project-dropdown' class='dropdown-content'>
+                    <li><a href="#!">Scientific Game Jam #3</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Puissance 4</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Demacia</a></li>
+                  </ul>
+
+                <li><a class="waves-effect waves-light btn orange modal-trigger" href="#contact">Contactez-nous</a></li>
               </ul>
             </div>
-
-            <ul class="sidenav cyan lighten-2" id="mobile-menu">
-              <li><a href="#presentation">Présentation</a></li>
-              <li><a href="#projects">Projets</a></li>
-              <li><a class="waves-effect waves-light btn modal-trigger" href="#contact">Contactez-nous</a></li>
-            </ul>
-
             <!-- Contact Modal Structure -->
             <div id="contact" class="modal">
               <div class="modal-content black-text">
@@ -63,45 +66,87 @@
                     </div>
                     <div class="row center-align">
                       <h5>Vos coordonnées</h5>
-                      <div class="input-field col s6">
+                      <div class="input-field col s4 m4 l4">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="first_name" type="text" class="validate">
                         <label for="first_name">Prénom</label>
                       </div>
-                      <div class="input-field col s6">
+                      <div class="input-field col s4 m4 l4">
                         <input id="last_name" type="text" class="validate">
                         <label for="last_name">Nom</label>
                       </div>
+                      <div class="input-field col s4 m4 l4">
+                        <i class="material-icons prefix">business</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Entreprise</label>
+                      </div>
                     </div>
                     <div class="row">
-                      <div class="input-field col s12">
+                      <div class="input-field col s6 m6 l6">
                         <i class="material-icons prefix">email</i>
                         <input id="email" type="email" class="validate">
                         <label for="email">Email</label>
                       </div>
+                      <div class="input-field col s6 m6 l6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone" type="tel" class="validate">
+                        <label for="telephone">Téléphone</label>
+                      </div>
                     </div>
                     <div class="row">
-                      <div class="input-field col s12">
+                      <div class="input-field col s12 m12 l12">
                         <i class="material-icons prefix">mode_edit</i>
                         <textarea id="textarea2" class="materialize-textarea" data-length="250"></textarea>
                         <label for="textarea2">Message</label>
                       </div>
                     </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat pulse deep-orange">
-                    <i class="material-icons right">send</i>Send</a>
-                </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-light btn pulse blue">
+                      <i class="material-icons right">send</i>Envoyer</a>
+                  </div>
+                </form>
               </div>
             </div>
           </nav>
         </div>
+
+        <ul class="sidenav orange lighten-4" id="mobile-menu">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header blue">
+                <a href="#presentation" class="white-text"><i class="material-icons">home</i>PRESENTATION</a>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header btn red"><i class="material-icons">construction</i>Projets
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <ul><i class="material-icons">groups</i>
+                    <li><a href="#!">Scientific Game Jam #3</a></li>
+                  </ul>
+                  <li class="divider" tabindex="-1"></li>
+                  <ul><i class="material-icons">videogame_asset</i>
+                    <li><a href="#!">Puissance 4</a></li>
+                  </ul>
+                  <li class="divider" tabindex="-1"></li>
+                  <ul><i class="material-icons">public</i>
+                    <li><a href="#!">Demacia</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header waves-effect waves-light btn  orange"><a href="#contact" class="modal-trigger white-text"><i class="material-icons">email</i>Contactez-nous</a>
+              </div>
+            </li>
+          </ul>
+        </ul>
       </header>
 
       <main id="main">
         <!-- Presentation !-->
-        <section class="container section grey lighten-2 z-depth-3" id="presentation">
+        <section class="container section white z-depth-4" id="presentation">
           <h2 class="center-align">Présentation de l'équipe</h2>
           <div class="row">
             <div class="student card green lighten-1 center-align col s12 l4 offset-l1 z-depth-5">
@@ -153,7 +198,7 @@
           </div>
         </section>
         <!-- Projects !-->
-        <section class="container section grey lighten-2 z-depth-3" id="projects">
+        <section class="container section white z-depth-4" id="projects">
           <h2 class="center-align">Portfolio</h2>
           <ul class="collapsible popout">
             <li>
@@ -167,10 +212,11 @@
                   <div class="card hoverable">
                     <div class="card-image">
                       <img src="img/scientific-game-jam.png">
-                      <h4 class="card-title">Puissance 4</h4>
                     </div>
                     <div class="card-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h5>Scientific Game Jam #3</h5>
+                      <p>Pour but de tester mes compétences actuelles en programmation, j'ai participé à ma première Game Jam à Lyon en distanciel.</p>
+                      <i class="right">Présenté par Hugo MAESTRACCI</i>
                     </div>
                     <div class="card-action">
                       <a href="#">En savoir plus</a>
@@ -190,10 +236,11 @@
                   <div class="card hoverable">
                     <div class="card-image">
                       <img src="img/scientific-game-jam.png">
-                      <h4 class="card-title red-text">Puissance 4</h4>
                     </div>
                     <div class="card-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h4>Projet #2 : Puissance 4</h4>
+                      <p>Réalisation d'un Puissance 4 sous le langage de programmation C, sans interface graphique et dans un univers Linux.</p><br>
+                      <i class="right">Présenté par Hugo MAESTRACCI</i>
                     </div>
                     <div class="card-action">
                       <a href="#">En savoir plus</a>
@@ -213,11 +260,11 @@
                   <div class="card hoverable">
                     <div class="card-image">
                       <img src="img/scientific-game-jam.png">
-                      <h4 class="card-title black-text">Demacia</h4>
                     </div>
                     <div class="card-content">
-
-                      <p> décrivant l'univers de Demacia appartenant à League of Legends</p>
+                      <h4>Projet #3 : HTML/CSS/SEO</h4>
+                      <p>Premier site pour découvrir les langages HTML/CSS et SEO sur l'univers de Demacia appartenant au jeu  League of Legends.</p>
+                      <i class="right">Présenté par Baptiste MILLAN</i>
                     </div>
                     <div class="card-action">
                       <a href="#">En savoir plus</a>
@@ -241,14 +288,14 @@
                <form>
                 <div class="row valign-wrapper">
                   <div class="input-field col s6 l5">
-                    <input id="secret_text" type="text" data-length="9">
-                    <label for="secret_text">Jeu contenant le premier easter egg ?</label>
+                    <input id="input_text" type="text" data-length="9">
+                    <label for="input_text">Jeu contenant le premier easter egg ?</label>
                   </div>
                   <div class="col s3 l3">
                     <a class="btn-floating waves-effect waves-light red" id="secret_btn"><i class="material-icons small">done</i></a>
                   </div>
                   <div class="col s3 l3 pull-l2">
-                    <a class="btn-floating waves-effect waves-light red" id="return_btn"><i class="material-icons small">keyboard_return</i></a>
+                    <a class="btn-floating waves-effect waves-light red" id="return_btn"><i class="material-icons small">undo</i></a>
                   </div>
                 </div>
              </div>
