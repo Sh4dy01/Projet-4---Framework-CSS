@@ -14,15 +14,18 @@ $('#textarea1').val('');
 
 $("#secret_btn" ).click(function() {
   var text = $("#secret_text").val();
-  var elem = $("#secret_img");
+  var elem1 = $("#secret1_img");
+  var elem2 = $("#secret2_img");
   var site = $("#main");
 
   site.hide();
-  elem.show();
-  elem.animate({top: '-=100px'}, "slow");
-  elem.animate({left: '+=100px'}, "fast");
-  elem.animate({left: '-=100px'}, "slow");
-  elem.animate({left: '+=10000px'}, "fast");
+  elem1.show();
+  elem2.show();
+
+  elem1.animate({top: '-=100px'}, "slow");
+  elem1.animate({left: '+=100px'}, "fast");
+  elem1.animate({left: '-=100px'}, "slow");
+  elem1.animate({left: '+=10000px'}, "fast");
 
   if (text == 'adventure') {
 
@@ -33,10 +36,10 @@ $("#secret_btn" ).click(function() {
 
 $("#return_btn" ).click(function() {
   var site = $("#main");
-  var elem = $("#secret_img");
+  var elem1 = $("#secret_img");
 
   site.show();
-  elem.hide();
-  elem.css("bottom", "0");
-  elem.css("left", "0")
+  elem1.hide();
+  elem1.css("bottom", "0");
+  elem1.css("left", "0")
 });
