@@ -23,12 +23,12 @@ main {
   padding-bottom: 4vw;
 }
 
-.titlepage3{
+.titlepage3 .titlepage4{
   font-size: 30px;
   color: white;
 }
 
-.textpage3{
+.textpage3 .textpage4{
   font-size: 25px;
 }
 
@@ -36,6 +36,7 @@ main {
   max-height: 500px;
 }
 
-p, h1, h2, ul, li, a{
+
+p, h1, h2, ul, li, a, button, center{
   font-family: 'Kanit', sans-serif;
 }
